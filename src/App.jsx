@@ -8,17 +8,18 @@ function App() {
   useEffect(() => {
     if (!themeDark) {
       document.body.style.backgroundColor = "rgb(48, 44, 44)";
-      document.querySelector(".card").style.backgroundColor =
+      document.querySelector(".container").style.backgroundColor =
         "rgb(149, 143, 143)";
     } else {
       document.body.style.backgroundColor = "rgb(149, 143, 143)";
-      document.querySelector(".card").style.backgroundColor = "rgb(48, 44, 44)";
+      document.querySelector(".container").style.backgroundColor =
+        "rgb(48, 44, 44)";
     }
   }, [themeDark]);
 
   return (
     <ThemeContextProvider value={{ themeDark }}>
-      <div>
+      <div className="container">
         <button onClick={() => setThemeDark(!themeDark)}>
           Change the Theme
         </button>
