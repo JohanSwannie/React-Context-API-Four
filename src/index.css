@@ -11,12 +11,16 @@ h2 {
   margin-bottom: 2rem;
 }
 
-.card {
+.container {
   display: grid;
   justify-content: center;
   align-items: center;
   width: 60vw;
-  margin: 0 20vw;
+  margin: auto;
+}
+
+.card {
+  background-color: gray;
 }
 
 button {
@@ -24,13 +28,13 @@ button {
   background-color: blue;
   width: 20vw;
   padding: 1rem;
-  margin: 5vh 40vw;
+  margin: 2rem auto;
 }
 
 img {
   width: 20vw;
   height: 50vh;
-  margin: 2rem 40vw;
+  margin: 2rem 0;
 }
 
 .lightText {
